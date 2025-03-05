@@ -1,4 +1,4 @@
-name: Use TK Automation Workflow
+name: Use TK Automation
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  call_tk_automation:
+  call_external_workflow:
     uses: laurabjaime/tk-automation/.github/workflows/send_code.yml@main
     with:
       ORG_NAME: "NB36"
