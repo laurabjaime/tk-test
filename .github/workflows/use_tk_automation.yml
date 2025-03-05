@@ -1,0 +1,14 @@
+name: Use TK Automation Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call_tk_automation:
+    uses: laurabjaime/tk-automation/.github/workflows/send_code.yml@main
+    with:
+      ORG_NAME: "NB36"
+    secrets:
+      API_KEY: ${{ secrets.API_KEY }}
