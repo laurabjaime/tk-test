@@ -1,0 +1,14 @@
+name: Use External GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call_external_workflow:
+    uses: seu-usuario/nb36-github-actions-integration/.github/workflows/send_code_reusable.yml@main
+    with:
+      ORG_NAME: "NB36"
+    secrets:
+      API_KEY: ${{ secrets.API_KEY }}
