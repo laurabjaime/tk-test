@@ -7,7 +7,7 @@ on:
 
 jobs:
   call_external_workflow:
-    uses: rjtests/tk-automation/.github/workflows/send_code.yml@main
+    uses: rjtests/taktile-automation/.github/workflows/send_code.yml@main
     with:
       ORG_NAME: "NB36"
     secrets:
